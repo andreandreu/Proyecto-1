@@ -46,6 +46,7 @@
             <!-- Información jugadores equipo rojo -->
             <section>
                 <!-- EQUIPO ROJO -->
+                 <h2>Equips</h2>
                <h3>Equip roig</h3>
                <!-- Con el código <table> hacemos una tabla -->
                <table>
@@ -121,9 +122,56 @@
                 <!-- Aquí cerramos la tabla -->
             </section> 
             <!-- Aquí cerramos la sección azul -->
+             <section>
+                <h2>Comprobacions de rigor</h2>
+                <!-- Para hacer un listado por puntos (·) con casillas para marcar -->
+               <label>
+                    <ul>
+                        <li>
+                             <input type="checkbox"/> Vmix encés
+                        </li>
+                        <li>
+                             <input type="checkbox"/> Rètols carregats
+                        </li>
+                        <li>
+                             <input type="checkbox"/> Dades revisades
+                        </li>
+                    </ul>
+               </label> 
+             </section>
+             <section>
+                <h2>Nova partida</h2>
+                <label>
+                    <dl>
+                        <dt> Dades generals
+                            <dd>Trinquet <input id="text"/></dd>
+                            <dd>Data <input type="date"/></dd>
+                            <dd>Hora d'inici <input type="time"></dd>
+                            <dd>Modalitat 
+                                <select>
+                                    <option>Escala i Corda</option>
+                                    <option>Raspall</option>
+                                    <option>Galotxa</option>
+                                    <option>Frontó</option>
+                                </select>
+                        </dt>
+                        <dt> Equip Roig
+                            <dd>Rest <input id="text"/></dd>
+                            <dd>Mitger <input id="text"/></dd>
+                            <dd>Punter <input id="text"/></dd>
+                        </dt>
+                        <dt> Equip Blau
+                            <dd>Rest <input id="text"/></dd>
+                            <dd>Mitger <input id="text"/></dd>
+                            <dd>Punter <input id="text"/></dd>
+                        </dt>
+                    </dl>
+                </label>
+                <input type="button" value="Guardar partida">
+             </section>
         </main>
         <footer>
-            
+            <h5>Departament de retransmissions. 2026</h5>
         </footer>
     </body>
 </html>
