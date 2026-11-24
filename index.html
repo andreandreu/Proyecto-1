@@ -22,7 +22,7 @@
         <main>
             <!-- Datos de la partida -->
             <section>
-                <h5>Dades de la partida</h5>
+                <h3>Dades de la partida</h3>
                 <dl>
                     <dt>Trinquet</dt>
                         <dd>Trinquet de Pelayo</dd>
@@ -30,12 +30,11 @@
                         <dd>1 de maig de 2026</dd>
                     <dt>Hora</dt>
                         <dd>11:30</dd>    
-
                 </dl>
             </section>
             <!-- Datos de la retransmisión -->
             <section>
-                <h5>Dades de la retransmissió</h5>
+                <h3>Dades de la retransmissió</h3>
                 <dl>
                     <dt>Apunt Mèdia</dt>
                         <dd>TDT</dd>
@@ -125,53 +124,85 @@
              <section>
                 <h2>Comprobacions de rigor</h2>
                 <!-- Para hacer un listado por puntos (·) con casillas para marcar -->
-               <label>
                     <ul>
                         <li>
-                             <input type="checkbox"/> Vmix encés
+                            <input type="checkbox" id="vmix"/> 
+                            <label for="vmix">Vmix encés</label>
+                            <!-- TODO INPUT Y LABEL DEBEN IR JUNTOS CON SU ID -->
                         </li>
                         <li>
-                             <input type="checkbox"/> Rètols carregats
+                             <input type="checkbox" id="rotulo_vmix"/>
+                            <label for="rotulo_vmix">Rètol revisat</label>
                         </li>
                         <li>
-                             <input type="checkbox"/> Dades revisades
+                             <input type="checkbox" id="dades_vmix"/>
+                            <label for="dades_vmix">Dades revisades</label>  
                         </li>
                     </ul>
-               </label> 
              </section>
              <section>
                 <h2>Nova partida</h2>
-                <label>
-                    <dl>
-                        <dt> Dades generals
-                            <dd>Trinquet <input id="text"/></dd>
-                            <dd>Data <input type="date"/></dd>
-                            <dd>Hora d'inici <input type="time"></dd>
-                            <dd>Modalitat 
-                                <select>
-                                    <option>Escala i Corda</option>
-                                    <option>Raspall</option>
-                                    <option>Galotxa</option>
-                                    <option>Frontó</option>
-                                </select>
-                        </dt>
-                        <dt> Equip Roig
-                            <dd>Rest <input id="text"/></dd>
-                            <dd>Mitger <input id="text"/></dd>
-                            <dd>Punter <input id="text"/></dd>
-                        </dt>
-                        <dt> Equip Blau
-                            <dd>Rest <input id="text"/></dd>
-                            <dd>Mitger <input id="text"/></dd>
-                            <dd>Punter <input id="text"/></dd>
-                        </dt>
-                    </dl>
-                </label>
-                <input type="button" value="Guardar partida">
+               <form>
+                    <fieldset>
+                        <legend>Dades generals</legend>
+                        <div>
+                            <label for="trinquet_id">Trinquet</label>
+                            <input id="trinquet_id">
+                        </div>
+                        <div>
+                            <label for="data_id">Data</label>  
+                            <input type="date" id="data_id">
+                        </div> 
+                        <div>
+                            <label for="horari_id">Horari de partida</label> 
+                            <input type="time" id="horari_id">
+                        </div>
+                        <div>
+                            <label for="modalitat_id">Modalitat</label>
+                            <select id="modalitat_id">
+                                <option>Escala i corda</option>
+                                <option>Raspall</option>
+                                <option>Frontó</option>
+                                <option>Galotxa</option>   
+                            </select> 
+                        </div> 
+                    </fieldset>
+                    <fieldset>
+                        <legend>Equip roig</legend>
+                        <div>
+                            <label for="rest_roig_id">Rest</label>
+                            <input id="rest_roig_id">
+                        </div>
+                        <div>
+                            <label for="mitger_roig_id">Mitger</label>
+                            <input id="mitger_roig_id">
+                        </div>
+                        <div>
+                            <label for="punter_roig_id">Punter</label>
+                            <input id="punter_roig_id">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Equip blau</legend>
+                        <div>
+                            <label for="rest_blau_id">Rest</label>
+                            <input id="rest_blau_id">
+                        </div>
+                        <div>
+                            <label for="mitger_blau_id">Mitger</label>
+                            <input id="mitger_blau_id">
+                        </div>
+                        <div>
+                            <label for="punter_blau_id">Punter</label>
+                            <input id="punter_blau_id">
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Guardar partida" id="guardar_partida_id">
+               </form>
              </section>
         </main>
         <footer>
-            <h5>Departament de retransmissions. 2026</h5>
+            <p>Departament de retransmissions 2026</p>
         </footer>
     </body>
 </html>
