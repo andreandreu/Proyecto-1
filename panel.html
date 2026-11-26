@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTFresta8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel de marcador</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Panel de marcador</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header><h1>MARCADOR PILOTA VALENCIANA</h1></header>
     <main>
+        <section class="marcador"> <!-- MARCADOR -->
+            <p id="jocs_rojos">20</p>
+            <p id="punts_rojos">NET</p>
+            <p id="punts_blaus">NET</p>
+            <p id="jocs_blaus">20</p>
+        </section>
+        <section class="botones"><!-- VARIABLES PUNTOS -->
+            <section class="roig"> <!-- PUNTUACIÓ EQUIP ROIG -->
+                <p class="equip_roig">EQUIP ROIG</p>
+                <div>
+                    <p>PUNTS ROJOS</p> <!-- PUNTS ROJOS -->
+                    <input type="button" id="suma_punt_roig" value="+">
+                    <input type="button" id="resta_punt_roig" value="-">
+                </div>
+                <div><!-- JOCS ROJOS -->
+                    <p class="equip.roig">JOCS ROJOS</p>    
+                    <input type="button" id="suma_joc_roig" value="+">
+                    <input type="button" id="resta_joc_roig" value="-">    
+                </div>
+            </section>
+            <section class="blau"><!-- PUNTUACIO EQUIP BLAU -->
+                <p class="equip_blau">EQUIP BLAU</p>
+                <div><!-- PUNTS BLAUS -->
+                    <P>PUNTS BLAUS</P>
+                    <input type="button" id="suma_punt_blau" value="+">
+                    <input type="button" id="resta_punt_blau" value="-">
+                </div> 
+                <div><!-- JOCS BLAUS -->
+                    <P>JOCS BLAUS</P>
+                    <input type="button" id="suma_joc_blau" value="+">
+                    <input type="button" id="resta_joc_blau" value="-">
+                </div>
+            </section>
+        </section>
+        <section class="directo">
+            <input type="button" class="boton_directo" id="directo_marcador" value="MARCADOR">
+        </section>
+        <form><!-- ROTULO NOM I CARREC -->
+            <fieldset>
+                <legend>Nom i càrrec</legend>
+                <div>
+                    <label for="nom_id">Nom</label>
+                    <input id="nom_id">
+                </div>
+                <div>
+                    <label for="carrec_id">Càrrec</label>
+                    <input id="carrec_id">
+                </div>
+                <div>
+                    <input type="button" id="directo_nom_carrec" value="DSK">
+                </div>
+            </fieldset>
+        </form>
+        <form><!-- ESTADISTICA ROIG -->
+            <fieldset>
+                <legend class="equip.roig">Estadistiques equip roig</legend>
+                <label for="estadistica_equip_roig"></label>
+                <input id="estadistica_equip_roig">
+                <input type="button" id="estadistica_equip_roig" value="DSK">
+            </fieldset>
+        </form>
+        <form><!-- ESTADISTICA BLAU -->
+            <fieldset>
+                <legend class="equip.blau">Estadistiques equip blau</legend>
+                <label for="estadistica_equip_blau"></label>
+                <input id="estadistica_equip_blau">
+                <input type="button" id="estadistica_equip_blau" value="DSK">
+            </fieldset>
+        </form>
         <section>
-            <div>
-                <p id="jocs_rojos">20</p>
-            </div>
-            <div>
-                <p id="punts_rojos">NET</p>
-            </div>
-            <div>
-                <p id="punts_blaus">NET</p>
-            </div>
-            <div>
-                <p id="jocs_blaus">20</p>
-            </div>
+            <input type="button" id="vmix" value="CONECTADO">
         </section>
         <section>
-            <div>
-                <input type="button" id="suma_punt_roig" value="suma punt roig">
-            </div>
-            <div>
-                <input type="button" id="resta_punt_roig" value="resta punt roig">
-            </div>
-            <div>
-                <input type="button" id="suma_punt_blau" value="suma punt blau">
-            </div>
-            <div>
-                <input type="button" id="resta_punt_blau" value="resta punt blau">
-            </div>
-            <div>
-                <input type="button" id="suma_joc_roig" value="suma joc roig">
-            </div>
-            <div>
-                <input type="button" id="resta_joc_roig" value="resta joc roig">
-            </div>
-            <div>
-                <input type="button" id="suma_joc_blau" value="suma joc blau">
-            </div>
-            <div>
-                <input type="button" id="resta_joc_blau" value="resta joc blau">
-            </div>
-        </section>
-        <section>
-            <p><input type="button" id="live_marcador" value="en directo"></p>
+            <input type="button" id="copy" value="COPY">
         </section>
     </main>
 </body>
