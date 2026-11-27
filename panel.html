@@ -44,43 +44,42 @@
         <section class="directo">
             <input type="button" class="boton_directo" id="directo_marcador" value="MARCADOR">
         </section>
-        <form><!-- ROTULO NOM I CARREC -->
-            <fieldset>
-                <legend>Nom i càrrec</legend>
-                <div>
-                    <label for="nom_id">Nom</label>
-                    <input id="nom_id">
-                </div>
-                <div>
-                    <label for="carrec_id">Càrrec</label>
-                    <input id="carrec_id">
-                </div>
-                <div>
-                    <input type="button" id="directo_nom_carrec" value="DSK">
-                </div>
-            </fieldset>
-        </form>
-        <form><!-- ESTADISTICA ROIG -->
-            <fieldset>
-                <legend class="equip.roig">Estadistiques equip roig</legend>
-                <label for="estadistica_equip_roig"></label>
-                <input id="estadistica_equip_roig">
-                <input type="button" id="estadistica_equip_roig" value="DSK">
-            </fieldset>
-        </form>
-        <form><!-- ESTADISTICA BLAU -->
-            <fieldset>
-                <legend class="equip.blau">Estadistiques equip blau</legend>
-                <label for="estadistica_equip_blau"></label>
-                <input id="estadistica_equip_blau">
-                <input type="button" id="estadistica_equip_blau" value="DSK">
-            </fieldset>
-        </form>
-        <section>
-            <input type="button" id="vmix" value="CONECTADO">
+        <section class="formularios"><!-- ROTULOS CAJA -->
+            <form class="caja_estadistica"><!-- ROTULO NOM I CARREC -->
+                    <p class="rotulo_formulario">NOM I CÀRREC</p>
+                    <div>
+                        <p id="nom_id">Nom</p>
+                        <input id="nom_id">
+                    </div>
+                    <div>
+                        <p id="carrec_id">Càrrec</p>
+                        <input id="carrec_id">
+                    </div>
+                    <div class="contenedor_boton_dsk">
+                        <input type="button" id="directo_nom_carrec" class="boton_directo" value="DSK1">
+                    </div>
+            </form>
+            <form class="caja_estadistica"><!-- ESTADISTICA ROIG -->
+                    <p class="rotulo_formulario">Estadistiques equip roig</p>
+                    <input id="estadistica_equip_roig">
+                    <div class="contenedor_boton_dsk">
+                        <input type="button" id="estadistica_equip_roig" class="boton_directo" value="DSK2">
+                    </div>
+            </form>
+            <form class="caja_estadistica"><!-- ESTADISTICA BLAU -->
+                    <p class="rotulo_formulario">Estadistiques equip blau</p>
+                    <p id="estadistica_equip_blau"></p>
+                    <input id="estadistica_equip_blau">
+                    <div class="contenedor_boton_dsk">
+                        <input type="button" id="estadistica_equip_blau" class="boton_directo" value="DSK3">
+                    </div>
+            </form>
         </section>
         <section>
-            <input type="button" id="copy" value="COPY">
+            <input type="button" id="vmix" class="boton_directo" value="CONECTADO">
+        </section>
+        <section>
+            <input type="button" id="copy" class="boton_directo" value="COPY">
         </section>
     </main>
 </body>
